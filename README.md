@@ -8,19 +8,19 @@ This is a Monte Carlo simulation of the basic model that computes the expected p
 
 ![ExpectedProfit-Result](images/ExpectedProfit-Result.png)
 
-This is a plot of the true price and market price for strategies 1, 2, and 3 when alphaU = 0.4:
+These are plots of the true price and market price for strategies 1, 2, and 3, respectively, when the noise factor alphaU = 0.4:
 
 ![ExpectedProfit-Series-alphaU-0.4-imbT-1](images/ExpectedProfit-Series-alphaU-0.4-imbT-1.png)
 ![ExpectedProfit-Series-alphaU-0.4-imbT-2](images/ExpectedProfit-Series-alphaU-0.4-imbT-2.png)
 ![ExpectedProfit-Series-alphaU-0.4-imbT-3](images/ExpectedProfit-Series-alphaU-0.4-imbT-3.png)
 
-This is a plot of the true price and market price for strategies 1, 2, and 3 when alphaU = 1.0:
+These are plots of the true price and market price for strategies 1, 2, and 3, respectively, when the noise factor alphaU = 1.0:
 
 ![ExpectedProfit-Series-alphaU-1.0-imbT-1](images/ExpectedProfit-Series-alphaU-1.0-imbT-1.png)
 ![ExpectedProfit-Series-alphaU-1.0-imbT-2](images/ExpectedProfit-Series-alphaU-1.0-imbT-2.png)
 ![ExpectedProfit-Series-alphaU-1.0-imbT-3](images/ExpectedProfit-Series-alphaU-1.0-imbT-3.png)
 
-This is a plot of the true price and market price for strategies 1, 2, and 3 when alphaU = 1.6:
+These are plots of the true price and market price for strategies 1, 2, and 3, respectively, when the noise factor alphaU = 1.6:
 
 ![ExpectedProfit-Series-alphaU-1.6-imbT-1](images/ExpectedProfit-Series-alphaU-1.6-imbT-1.png)
 ![ExpectedProfit-Series-alphaU-1.6-imbT-2](images/ExpectedProfit-Series-alphaU-1.6-imbT-2.png)

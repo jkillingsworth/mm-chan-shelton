@@ -6,7 +6,7 @@ open MathNet.Numerics.Distributions
 
 let noiseMin = 0.0
 let noiseMax = 2.0
-let noiseInc = 0.05
+let noiseStep = 0.05
 
 let alphaP = 0.2
 
@@ -73,4 +73,4 @@ let computeResults random iterations imbThreshold =
         let expectedProfit = double profit / double iterations
         (alphaU, expectedProfit)
 
-    [ noiseMin .. noiseInc .. noiseMax ] |> List.map computeExpectedProfit
+    [ noiseMin .. noiseStep .. noiseMax ] |> List.map computeExpectedProfit
