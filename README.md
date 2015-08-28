@@ -25,3 +25,35 @@ These are plots of the true price and market price for strategies 1, 2, and 3, r
 ![ExpectedProfit-Prices-alphaU-1.6-imbalance-1](images/ExpectedProfit-Prices-alphaU-1.6-imbalance-1.png)
 ![ExpectedProfit-Prices-alphaU-1.6-imbalance-2](images/ExpectedProfit-Prices-alphaU-1.6-imbalance-2.png)
 ![ExpectedProfit-Prices-alphaU-1.6-imbalance-3](images/ExpectedProfit-Prices-alphaU-1.6-imbalance-3.png)
+
+#### 02 - Basic Model (SARSA)
+
+This is an implementation of the basic model that uses the SARSA learning method to choose the optimum strategy. The following is a reproduction of Figure 5 from the paper:
+
+* Episode 25
+
+![BasicModel-Prices-025](images/BasicModel-Prices-025.png)
+
+* Episode 100
+
+![BasicModel-Prices-100](images/BasicModel-Prices-100.png)
+
+* Episode 200
+
+![BasicModel-Prices-200](images/BasicModel-Prices-200.png)
+
+* Episode 500
+
+![BasicModel-Prices-500](images/BasicModel-Prices-500.png)
+
+The following is a reproduction of Figure 6a from the paper:
+
+![BasicModel-EndOfEpisodeProfitSum](images/BasicModel-EndOfEpisodeProfitSum.png)
+
+The following is a reproduction of Figure 6b from the paper:
+
+![BasicModel-EndOfEpisodeInventory](images/BasicModel-EndOfEpisodeInventory.png)
+
+The following is a reproduction of Figure 6c from the paper:
+
+![BasicModel-AveragePriceDeviation](images/BasicModel-AveragePriceDeviation.png)
