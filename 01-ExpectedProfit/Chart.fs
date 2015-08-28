@@ -25,7 +25,7 @@ let private defaultColorsToUseForPlots =
 
 //-------------------------------------------------------------------------------------------------
 
-let renderSeries path data =
+let renderPrices path data =
 
     let model = PlotModel()
 
@@ -63,19 +63,19 @@ let renderSeries path data =
     model.Axes.Add(axis)
 
     let series = LineSeries()
-    series.Title <- "p*"
+    series.Title <- "True price"
     series.StrokeThickness <- 1.0
     data
-    |> List.mapi (fun i (p, _, _, _, _) -> DataPoint(double i, double p))
-    |> List.iter series.Points.Add
+    |> Array.mapi (fun i (p, _, _, _, _) -> DataPoint(float i, float p))
+    |> Array.iter series.Points.Add
     model.Series.Add(series)
 
     let series = LineSeries()
-    series.Title <- "pm"
+    series.Title <- "MM price"
     series.StrokeThickness <- 1.0
     data
-    |> List.mapi (fun i (_, p, _, _, _) -> DataPoint(double i, double p))
-    |> List.iter series.Points.Add
+    |> Array.mapi (fun i (_, p, _, _, _) -> DataPoint(float i, float p))
+    |> Array.iter series.Points.Add
     model.Series.Add(series)
 
     model |> exportToPng path 700 400
@@ -120,7 +120,7 @@ let renderResult path data =
 
     for (imbThreshold, points) in data do
         let series = LineSeries()
-        series.Title <- sprintf "imbT = %i" imbThreshold
+        series.Title <- sprintf "Imbalance = %i" imbThreshold
         series.StrokeThickness <- 1.0
         points
         |> List.mapi (fun i (x, y) -> DataPoint(x, y))
