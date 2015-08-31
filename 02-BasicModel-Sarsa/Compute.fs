@@ -40,24 +40,23 @@ let private event random alphaU =
 let private getValue (values : float[,]) state action =
 
     let (_, _, _, imb, _) = state
-    let imb = if imb > +3 then +3 else imb
-    let imb = if imb < -3 then -3 else imb
     values.[imb + 3, action + 1]
 
 let private setValue (values : float[,]) state action value =
 
     let (_, _, _, imb, _) = state
-    let imb = if imb > +3 then +3 else imb
-    let imb = if imb < -3 then -3 else imb
     values.[imb + 3, action + 1] <- value
 
 let private getProfit state =
     let (_, _, _, _, profit) = state
     profit
 
+let private computeReward state state' =
+    float (getProfit state' - getProfit state)
+
 //-------------------------------------------------------------------------------------------------
 
-let private actions = [| 0; -1; +1 |]
+let private actions = [| -1; 0; +1 |]
 
 let private selectAction random explore values state =
 
@@ -78,9 +77,11 @@ let private executeAction random alphaU state action =
     let (pStar, pMark, inv, imb, profit) = state
 
     let (pMark, imb) =
-        match action with
-        | +1 -> pMark + 1, 0
-        | -1 -> pMark - 1, 0
+        match action, imb with
+        | +1, _ -> pMark + 1, 0
+        | -1, _ -> pMark - 1, 0
+        | _, +3 -> pMark + 1, 0
+        | _, -3 -> pMark - 1, 0
         | _  -> pMark, imb
 
     match event random alphaU with
@@ -103,7 +104,7 @@ let private executeOneTimeStep random explore alphaU (values, state, action) =
 
     let state' = executeAction random alphaU state action
     let action' = selectAction random explore values state'
-    let reward = float (getProfit state' - getProfit state)
+    let reward = computeReward state state'
     let qNext = getValue values state' action'
     let q = getValue values state action
     let q = q + alpha * (reward + (gamma * qNext) - q)
