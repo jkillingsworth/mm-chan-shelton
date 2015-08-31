@@ -58,7 +58,7 @@ The following is a reproduction of Figure 6c from the paper:
 
 ![BasicModel-AveragePriceDeviation](images/BasicModel-AveragePriceDeviation.png)
 
-#### 03 Extended Model (SARSA)
+#### 03 - Extended Model (SARSA)
 
 This is an implementation of the extended model that uses the SARSA learning method to choose the optimum spread. The following is a reproduction of Figure 9 from the paper:
 
