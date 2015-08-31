@@ -57,3 +57,39 @@ The following is a reproduction of Figure 6b from the paper:
 The following is a reproduction of Figure 6c from the paper:
 
 ![BasicModel-AveragePriceDeviation](images/BasicModel-AveragePriceDeviation.png)
+
+#### 03 Extended Model (SARSA)
+
+This is an implementation of the extended model that uses the SARSA learning method to choose the optimum spread. The following is a reproduction of Figure 9 from the paper:
+
+* Episode 25
+
+![ExtendedModel-Prices-025](images/ExtendedModel-Prices-025.png)
+
+* Episode 100
+
+![ExtendedModel-Prices-100](images/ExtendedModel-Prices-100.png)
+
+* Episode 200
+
+![ExtendedModel-Prices-200](images/ExtendedModel-Prices-200.png)
+
+* Episode 500
+
+![ExtendedModel-Prices-500](images/ExtendedModel-Prices-500.png)
+
+The following is a reproduction of Figure 10a from the paper:
+
+![ExtendedModel-EndOfEpisodeProfitSum](images/ExtendedModel-EndOfEpisodeProfitSum.png)
+
+The following is a reproduction of Figure 10b from the paper:
+
+![ExtendedModel-AverageEpisodicSpread](images/ExtendedModel-AverageEpisodicSpread.png)
+
+The following is a reproduction of Figure 10c from the paper:
+
+![ExtendedModel-AveragePriceDeviation](images/ExtendedModel-AveragePriceDeviation.png)
+
+The following is a reproduction of Figure 10d from the paper:
+
+![ExtendedModel-EndOfEpisodeInventory](images/ExtendedModel-EndOfEpisodeInventory.png)
