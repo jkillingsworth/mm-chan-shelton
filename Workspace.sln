@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "01-ExpectedProfit", "01-Exp
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "02-BasicModel-Sarsa", "02-BasicModel-Sarsa\02-BasicModel-Sarsa.fsproj", "{D767CA16-8028-4265-AD7E-697CA8D30FE1}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "03-ExtendedModel-Sarsa", "03-ExtendedModel-Sarsa\03-ExtendedModel-Sarsa.fsproj", "{15981792-F97A-42EA-81C7-61BA67CF1B9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D767CA16-8028-4265-AD7E-697CA8D30FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D767CA16-8028-4265-AD7E-697CA8D30FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D767CA16-8028-4265-AD7E-697CA8D30FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15981792-F97A-42EA-81C7-61BA67CF1B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15981792-F97A-42EA-81C7-61BA67CF1B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15981792-F97A-42EA-81C7-61BA67CF1B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15981792-F97A-42EA-81C7-61BA67CF1B9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
