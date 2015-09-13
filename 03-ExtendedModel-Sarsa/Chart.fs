@@ -121,7 +121,7 @@ let renderPrices path data =
     model.Series.Add(series)
 
     let series = AreaSeries()
-    series.Title <- "MM Price"
+    series.Title <- "MM price"
     series.StrokeThickness <- 1.0
     data
     |> Array.mapi (fun i (_, p, _, _, _, _) -> DataPoint(float i, float p))
